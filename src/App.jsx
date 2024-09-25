@@ -98,7 +98,7 @@ export default function ProductsList() {
                 <input
                   type="number"
                   min="1"
-                  max={product.stock} // จำกัดจำนวนที่สามารถเลือกได้ตาม stock
+                  max={product.stock}
                   value={quantities[product.id] || 1}
                   onChange={(e) => setQuantities({ ...quantities, [product.id]: parseInt(e.target.value) })}
                   className="border rounded-md w-16 text-center"
